@@ -5,6 +5,17 @@ import java.util.Queue;
 
 public class ProducerConsumer {
 
+//    wait()
+//    Called inside a synchronized block/method.
+//    Makes the current thread release the lock on the object and go into waiting state.
+//    The thread stays paused until another thread calls notify() or notifyAll() on the same object.
+//    Used when a condition isn’t ready yet (e.g., queue is full or empty).
+
+//    notifyAll()
+//    Wakes up all threads that are waiting on the same object’s monitor.
+//    The awakened threads still need to reacquire the lock before continuing.
+//    Typically used after changing a shared resource so other threads can re-check their conditions.
+
     int capacity;
     Queue <Integer> queue = new LinkedList<>();
 
